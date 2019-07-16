@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/questlaunch.css">
+</head>
+
+<body>
+
+    <audio id="myAudioElement" preload="metadata">
+        <source src="test.wav" type="audio/wav">
+    </audio>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript">
+        // var audio = document.getElementById('myAudioElement') || new Audio();
+        // $.ajax({
+        //     url: 'http://localhost:8080',
+        //     method: "POST", 
+        //     crossDomain: true,
+        //     data: JSON.stringify({ text: '<voice-transformation type="Young" strength="80%"> Hello fellow humans!! My planet is in danger. </voice-transformation>' }),
+        //     success: function( data ) {
+        //         console.log(data); 
+        //         let binary = atob(data.split(',')[1]);
+        //         let array = [];
+        //         for (var i = 0; i < binary.length; i++) {
+        //             array.push(binary.charCodeAt(i));
+        //         }
+        //         let blob = new Blob([new Uint8Array(array)], {type: 'audio/jpeg'});
+        //         let blobUrl = URL.createObjectURL(blob);
+        //         $('audio #source').attr('src', blobUrl);
+        //         $('audio').get(0).load();
+        //         $('audio').get(0).play();
+        //     }
+        // });
+        let audio = document.querySelector('#myAudioElement');
+        audio.src = 'test.wav';
+        // audio.onloadedmetadata = function() {
+        //     console.log(audio.duration); //duration of audio
+        //     // console.log("start");
+        //     // audio.play();
+        // };
+
+        // audio.onended = function() {
+        //     console.log("end");
+        // }
+
+        // function play_text() {
+        //     console.log("start");
+        //     audio.play();
+        //     // window.removeEventListener("mousemove", play_text);
+        // }
+
+        // let play_audio = window.addEventListener("mousemove", play_text);
+    </script>
+
+    <canvas></canvas>
+
+    <script src="js/questlaunch.js"></script>
+    <button id="playbtn" onclick="play_text()">PLAY</button>
+    <button id="skipbtn" onclick="location.href='questview.html'">SKIP</button>
+</body>
+
+</html>

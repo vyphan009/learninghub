@@ -1,0 +1,224 @@
+body {
+  font-family: 'Arial';
+  background-image: url(../images/earth_bg.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: cover; 
+  background-position: center; 
+}
+
+.listDiv > h1, 
+.listDiv > h2, 
+.listDiv > h3, 
+.listDiv > h4, 
+.listDiv > h5, 
+.listDiv > h6 {
+  color: white; 
+}
+
+ul.fileList {
+  border: 1px solid #eee;
+  width: auto;
+  min-height: 20px;
+  list-style-type: none;
+  margin: 0;
+  padding: 5px 0 0 0;
+  background-color: lightgrey;
+}
+
+ul.fileList > li {
+  margin: 0 5px 5px 5px;
+  font-size: 100%;
+  border: 1px solid #eee;
+  vertical-align: center;
+  min-height: 40px; 
+  padding-top: 5px; 
+}
+
+ul.fileList > li.student1 {
+  background-color: #87CEEB;
+}
+
+ul.fileList > li.student2 {
+  background-color: #FF6347;
+}
+
+ul.fileList > li.student3 {
+  background-color: #90EE90;
+}
+
+ul.fileList > li.student4 {
+  background-color: #FFC0CB;
+}
+
+ul.fileList > li > span {
+  display: block; 
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 2px; 
+}
+
+ul.fileList > li > img {
+  object-fit: scale-down; 
+  height: 30px;   
+  margin-bottom: 3px; 
+}
+
+ul.fileList > li > img.handle {
+  float: right;   
+  margin-left: 5px; 
+}
+
+ul.fileList > li > img.type {
+  float: left;
+  margin-right: 5px; 
+}
+
+#addFileSection {
+  text-align: center;
+  color: white; 
+  margin-bottom: 5px; 
+}
+
+#addFileSection > div > img {
+  margin-left: auto; 
+  margin-right: auto; 
+  display: block; 
+  height: 40px; 
+  width: auto; 
+}
+
+div.listDiv {
+  margin-bottom: 20px; 
+}
+
+.modal {
+  display: none; 
+  z-index: 1; 
+  padding-top: 50px;
+  padding-bottom: 50px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding-top: 25px;
+  padding-left: 20px; 
+  padding-right: 20px; 
+  padding-bottom: 20px; 
+  border: 1px solid #888;
+  width: 90%;
+  height: auto; 
+  position: relative; 
+}
+
+#modalCloseBar {
+  text-align: right; 
+  color: #aaaaaa;
+  font-size: 28px;
+  font-weight: bold;
+  padding: 0px; 
+  display: inline; 
+  font-size: 35px; 
+  line-height: 30px; 
+}
+
+#modalClose {
+  display: inline-block;
+  width: 30px; 
+  height: 30px; 
+  text-align: center;
+}
+
+#modalClose:hover,
+#modalClose:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+input {
+  margin-top: 8px; 
+  margin-bottom: 8px; 
+}
+
+.textInput {
+  width: 60%; 
+}
+
+button.delete {
+  float: right;
+}
+
+.streamArea {
+  width: 100%; 
+  height: 100%;
+  text-align: center;
+}
+
+.messageArea{
+  text-align: center;
+}
+
+.inputFooter {
+  margin-top: 10px; 
+}
+
+.imageCanvas {
+  display: none; 
+}
+
+.viewHeader {
+  margin-bottom: 8px; 
+}
+
+.imageDisplay {
+  display: block; 
+}
+
+.media {
+  width: 100%; 
+  margin: 0 auto 8px auto; 
+}
+
+.ql-container, .ql-editor {
+  height: auto;
+}
+
+.fileTitle {
+  word-break: break-word; 
+}
+
+#submitHeader {
+  margin-top: 10px; 
+  margin-bottom: 10px; 
+}
+
+#submitHeader > a {
+  margin-right: 5px; 
+}
+
+#submitHeader > a > button {
+  background-color: lightgrey;
+  color: black;
+  font-weight: bolder;
+  border-radius: 20pt;
+  border: none;
+  padding: 5px 32px;
+  width: auto;
+  height: auto;
+  outline: none;
+}
+
+.videoRecord {
+    width: 160px;
+    height: 120px;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/spaceshop.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- Prevents carousel from auto sliding -->
+    <script>
+        $(document).ready(function() {
+            $("#myCarousel").carousel({
+                interval: false
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <script src="js/spaceshop.js"></script>
+    <div id="myCarousel" class="carousel slide">
+        <!-- Carousel indicators -->
+        <!-- <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol> -->
+        <!-- Wrapper for carousel items -->
+        <div class="carousel-inner">
+            <!-- First carousel item -->
+            <div class="carousel-item active">
+                <div class="carousel-caption">
+                    <label class="costume_price">100&nbsp
+                        <img src="images/space_crystal_blue.png" alt="price in space crystals">
+                    </label>
+                </div>
+                <img src="images/spacesuit.png" alt="First Slide">
+            </div>
+            <!-- Second carousel item -->
+            <div class="carousel-item">
+                <div class="carousel-caption">
+                    <label class="costume_price">200&nbsp
+                        <img src="images/space_crystal_blue.png" alt="price in space crystals">
+                    </label>
+                </div>
+                <img src="images/space_crystal_blue.png" alt="Second Slide">
+            </div>
+            <!-- Third carousel item -->
+            <div class="carousel-item">
+                <div class="carousel-caption">
+                    <label class="costume_price">300&nbsp
+                        <img src="images/space_crystal_blue.png" alt="price in space crystals">
+                    </label>
+                </div>
+                <img src="images/space_crystal_green.png" alt="Third Slide">
+            </div>
+            <div class="actionbtns">
+                <button id="backbtn" onclick="location.href='menu.html'">Back</button>
+                <button id="trybtn">Try</button>
+                <button id="buybtn" onclick="purchase()">Buy</button>
+            </div>
+        </div>
+        <!-- Carousel controls -->
+        <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+    <button id="logoutbtn" onclick="location.href='landing.html'"></button>
+    <!-- User crystals -->
+    <div class="user_crystals">
+        <label class="user_wallet">1000&nbsp
+            <img src="images/space_crystal_green.png" alt="user's space crystals">
+        </label>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+html {
+    background: url(../images/Alien_World_Background.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 65% 90%;
+    height: 100%;
+    margin: 0%;
+    top: 0%;
+    padding: 0%;
+}
+
+body {
+    background: url(../images/quest_view.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    height: 100%;
+    margin: 0%;
+    top: 0%;
+    padding: 0%;
+}
+
+canvas {
+    /* border: 1px solid black; */
+    position: fixed;
+    bottom: 25vh;
+    left: 50vw;
+}
+
+#playbtn {
+    position: fixed;
+    font-weight: bolder;
+    font-size: 4vmin;
+    font-family: Arial;
+    text-shadow: 0px 1px 1px #757575;
+    border-radius: 20pt;
+    border: none;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: auto;
+    height: auto;
+    outline: none;
+    left: 50vw;
+    bottom: 15vh;
+    margin-left: -25vw;
+}
+
+#skipbtn {
+    position: fixed;
+    font-weight: bolder;
+    font-size: 4vmin;
+    font-family: Arial;
+    text-shadow: 0px 1px 1px #757575;
+    border-radius: 20pt;
+    border: none;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: auto;
+    height: auto;
+    outline: none;
+    right: 50vw;
+    bottom: 15vh;
+    margin-right: -25vw;
+}

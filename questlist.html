@@ -1,0 +1,45 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE HTML>
+<html>
+<head>
+    <link href="css/questlist.css" rel="stylesheet" type="text/css">
+    <title>Quest List</title>
+</head>
+
+<body>
+    <!--
+    <div id="tips_div">
+        <button id="tips">
+            <img id="tips_image" src="images/icons8-help-48.png" width="40" height="40" onclick="toggleTip()">
+        </button>Tips <font id="tips_off">off</font>
+    </div>
+    -->
+    <div id="top_clip">
+        <img id="top_image" src="images/QuestListBackgroundTop.jpg" width="100%">
+        <button id="top_menu" onclick="mainMenuClick()">MAIN MENU</button>
+    </div>
+    <div id="current_quest_background">
+        <button id="rounded_current_button" onclick="currentQuestClick()">
+            <div id="current_quest_title_font">What's with All this Smoke?</div>
+            <img id="current_image" src="images/alien_landscape_by_moon_manunit_42_d4wwmvy-pre.jpg" align="left" alt ="quest image">
+            Solved <br/>
+            Feedback
+        </button>
+        <img class="tips_hidden" src="images/infoIcon.png" title="Current quests">
+    </div>
+
+    <div id="quest_list">
+        <div id="quest_list_title">Quests: 
+        <img id="quest_list_title_info" class="tips_hidden" src="images/infoIcon.png" title="Quest list">
+        <img id="time_icon_info" class="tips_hidden" src="images/infoIcon.png" title="Chronological view">
+        <img id="time_icon" src="images/icons8-time-machine-80.png" align="right" alt="time">
+        </div>
+        <table id="quest_list_table">
+        </table>
+    </div>
+    <img id="bottom_clip" src="images/QuestListBackgroundBottom.jpg" width="100%">
+    <script src='js/questlist.js'></script>
+
+</body>
+
+</html>

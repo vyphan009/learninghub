@@ -1,0 +1,116 @@
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- jquery ui touch punch -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- quill-->
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+
+    <script defer type="text/javascript" src="js/submit.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/submit.css">
+</head>
+
+<body>
+    <div id="submitHeader" class="container">
+        <a href="questview.html"><button>Back</button></a>
+        <a href="menu.html"><button>Return to Menu</button></a>
+    </div>
+    <div class="container">
+        <div id="primaryListArea" class="row">
+            <div id="submitDiv" class="listDiv col-12 col-md-6">
+                <h3>Files for Alien</h3>
+                <ul id="submitSortable" class="connectedSortable fileList">
+                </ul>
+            </div>
+            <div id="studentDiv1" class="listDiv col-12 col-md-6">
+                <h3>Your Files</h3>
+                <h5>Add new file:</h5>
+                <div id="addFileSection" class="row">
+                    <div id="textButton" class="col"><img src="images/text-icon.png">Text</div>
+                    <div id="audioButton" class="col"><img src="images/audio-icon.png">Audio</div>
+                    <div id="imageButton" class="col"><img src="images/photo-icon.png">Image</div>
+                    <div id="videoButton" class="col"><img src="images/cinema-icon.png">Video</div>
+                </div>
+                <ul id="studentSortable1" class="connectedSortable fileList">
+                </ul>
+            </div>
+        </div>
+        <div id="teamListArea" class="row">
+        </div>
+    </div>
+    <!-- The Modal -->
+    <div id="modal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div id="modalCloseBar"><span id="modalClose">&times;</span></div>
+            <div id="textInputContent">
+                <form id="textInputForm">
+                    <!-- replaced title attribute because error message was the default one and not custom -->
+                    Title: <input id="textTitle" class="textInput" type="text" name="textTitle" required pattern=".*\S+.*" oninvalid="this.setCustomValidity('This field is required')" oninput="this.setCustomValidity('')"><br>
+                    <div id="editor"></div>
+                    <input id="textSubmit" type="submit" value="Save File">
+                </form>
+            </div>
+            <div id="audioRecordContent">
+                <form id="audioRecordForm">
+                    Title: <input id="audioTitle" class="audioInput" type="text" name="audioTitle" required pattern=".*\S+.*" title="This field is required"><br>
+                    <div id="audioRecordStartButton" class="col"><img src="images/record_icon.png"></div>
+                    <div id="audioRecordStopButton" class="col"><img src="images/stop_icon.png"></div>
+                    <div id="audioRecordControl" class="col">
+                    </div>
+                    <input id="audioRecordDeleteButton" type="button" value="Delete Selected Audios">
+                    <input id="audioSubmit" type="submit" value="Save File">
+                    <input id="audioRecordDeleteFileButton" type="button" value="Delete File">
+                </form>
+            </div>
+            <div id="videoRecordContent">
+                <form id="videoRecordForm">
+                    Title: <input id="videoTitle" class="videoInput" type="text" name="videoTitle" required pattern=".*\S+.*" title="This field is required"><br>
+                    <div id="videoRecordStartButton" class="col"><img src="images/record_icon.png"></div>
+                    <div id="videoRecordStopButton" class="col"><img src="images/stop_icon.png"></div>
+                    <div id="videoRecordControl" class="col"></div>
+                    <input id="videoRecordDeleteButton" type="button" value="Delete Selected Videos">
+                    <input id="Submit" type="submit" value="Save File">
+                    <input id="videoRecordDeleteFileButton" type="button" value="Delete File">
+                </form>
+                <button class="delete">Delete File</button>
+            </div>
+            <div id="textViewContent">
+                <h4 id="textViewTitle" class="fileTitle"></h4>
+                <div id="textViewBody" class="ql-editor"></div>
+                <button id="textViewEdit">Edit Text</button>
+                <button class="delete">Delete File</button>
+            </div>
+            <div id="imageInputContent">
+                <div id="imageInputStreamArea" class="streamArea">
+                    <video id="imageInputVideo" class="media" autoplay playsinline></video>
+                    <br><button id="imageInputSnap" class="inputFooter">Take Picture</button>
+                </div>
+                <div id="imageInputMessageArea" class="messageArea"></div>
+            </div>
+            <div id="imageEditContent">
+                <canvas class="imageCanvas"></canvas>
+                <img class="imageDisplay media">
+                <form id="imageEditForm">
+                    Title: <input id="imageEditTitle" class="textInput" type="text" name="imageTitle" required oninvalid="this.setCustomValidity('This field is required')" oninput="this.setCustomValidity('')">
+                    <input id="imageEditSubmit" type="submit" value="Save File">
+                </form>
+            </div>
+            <div id="imageViewContent">
+                <h4 id="imageViewTitle" class="viewHeader fileTitle"></h4>
+                <img class="imageDisplay media">
+                <button id="imageViewEdit">Edit Title</button>
+                <button class="delete">Delete File</button>
+            </div>
+        </div>
+    </div>
+</body>

@@ -1,0 +1,273 @@
+body,html{
+    background-image: url("../images/landing-bg.png") ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    height: 100%;    
+    padding-bottom: 4%;
+}
+
+img{
+    z-index: 1;
+    width: 60vw;
+    height: 80vh;
+    margin-top: -2vw;
+    margin-left: 18%;
+}
+
+
+.button{
+    position: fixed;
+    left: 43.5%;
+    margin-top: -15vh; 
+    display: table;
+    justify-content: center;
+    background: orange;
+    color: white;
+    font-weight: bolder;
+    font-size: 4vmin;
+    text-shadow: 0px 1px 1px #757575;
+    border-radius: 20pt;
+    border: none;
+    padding: 5px 10px;
+    width: auto;
+    height: auto;
+    outline: none;
+    background-image: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 40%, rgba(255,255,255,0.5) 51%);
+}
+
+.button:hover{
+    background: #ff7c01;
+
+}
+/*1st*/
+.landing{
+    display: flex;
+    flex-direction: column;
+}
+
+#enter{
+    position: relative;
+    left: 42%;
+    /* margin-top: -10%; */
+    background: orange;
+    background-image: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 40%, rgba(255,255,255,0.5) 51%);
+    width: auto;
+    height: auto;
+    outline: none;
+    font-size: calc(6vmin - 1vmax);
+    border: none;
+    justify-content: center;
+    padding: 5px 10px;
+    text-shadow: 0px 1px 1px #757575;
+    border-radius: 20pt;
+    color: white;
+
+
+}
+
+#logoword{
+    color: #4c98ef;
+    font-weight: bold;
+    font-size: calc(6vmin - 1vmax);
+    letter-spacing: 0.2vmin;
+    position: relative;
+    margin-left: 35%;
+    bottom: 24vh;
+}
+
+/*2nd*/
+.inner>label{
+    position: fixed;
+    left: 38%;
+    margin-top: 3%;
+    font-size: calc(5vmin - 1vmax);
+    letter-spacing: 0.5vmin;
+    color: #4c98ef;
+}
+
+#moon{
+    position: fixed;
+    top: -1vh;
+    right: 1vw;
+    width: 35vw;
+    height: 55vh;
+    overflow: hidden;
+    
+}
+@media only screen and (max-width: 748px) and (orientation: portrait){
+    img{
+        margin-top: 1vw;
+        margin-left: 20vw;
+    }
+    #menubtn{
+        width: 5vw;
+        font-size: 5vmin;
+        margin-left: -6.5vw;
+    }
+
+    .inner>input{
+        position: relative;
+        margin-left: -0.5vw;
+        
+    }
+
+    #name, #password{
+        width: 25vw;
+        height: 4vh;
+    }
+    .label2{
+        margin-left: -3vw;
+    }
+    .inner>button{
+        margin-left: -4vw;
+    }
+    #startbtn{
+        margin-left: -1.5vw;
+    }
+
+    p{
+        margin-top: -15vh;
+        font-size: 1.5vmax;
+        letter-spacing: -0.2vmin;
+        /* z-index: 1; */
+    }
+    #logoword{
+        margin-left: 26%;
+    }
+
+    #enter{
+        position: relative;
+        margin-left: -1.5%;
+        margin-top: -12%;
+    }
+    
+    #moon{
+        /* width: 30vw; */
+        height: 35vh;
+        width: 35vh;
+        right: -7vw;
+    }
+  }
+
+
+@media only screen and (max-width: 360px)and (orientation: portrait){
+   
+    #startbtn{
+        margin-left: -4%;
+    }
+    .inner>input{
+        width: 5vw;
+        height: 5vh;
+    }
+    #menubtn{
+        margin-left: -3%;
+    }
+
+    #enter{
+        margin-left: -2%;
+    }
+    
+
+}
+
+@media only screen and (max-width: 389px)and (orientation: portrait){
+
+    #moon{
+        width: 45vw;
+        height: 30vh;
+        right: -1vw;
+    }
+}
+
+@media only screen and (max-width: 670px)and (orientation: portrait){
+    #moon{
+    right: -2vw;
+    }
+}
+@media only screen and (max-width: 754px) and (orientation: landscape){
+    img{
+        margin-left: 22vw;
+    }
+    #enter{
+        margin-left: 3%;
+    }
+    .inner>button{
+        margin-left: 1vw;
+    }
+    .inner>input{
+        margin-left: 2vw;
+    }
+   
+    
+}
+
+.inner{
+    position: fixed;
+    left: 0%;
+    margin-top: 10vh;
+    margin-bottom: -10vh;
+    height:  100%;
+    width: 100%;
+    display: table;
+    justify-content: center;
+}
+
+.label1{
+    top: 25%;
+    left: 43%;
+}
+.label2{
+    top: 35%;
+    left: 33%;
+
+}
+.inner>input{
+    position: fixed;
+    top: 40vh;
+    left: 38%;
+    margin-top: 10vh;
+    border-radius: 50px;
+    width: 20vw;
+    height: 6%;
+    display: flex;
+    justify-content: center;
+}
+
+p{
+    position: fixed;
+    top: 20vh;
+    left: 20vw;
+    background: white;
+    font-size: 4.5vmin;
+    border-radius: 20pt;  
+    padding: 3vmin 5vmin 5vmin;
+    width: 60vw;
+    height: 50vh;
+    outline: none;
+    display: table;
+}
+
+.inner>button{
+    position: fixed;
+    top: 50vh;
+    left: 43%;
+    margin-top: 10vh;
+    width: auto;
+    display: flex;
+    justify-content: center;
+}
+#menubtn{
+    position: absolute;
+    top: 75vh;
+    left: 43.5%;
+    margin-top: 10vh;
+    width: auto;
+    display: flex;
+    justify-content: center;
+}
+
+#startbtn{
+    left: 45%;
+}

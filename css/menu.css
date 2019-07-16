@@ -1,0 +1,198 @@
+body, html{
+    background-image: url("../images/bg.jpg") ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    height: 100%;
+    margin: 0%;
+    
+}
+
+.btns{
+    position: fixed;
+    left: 37%;
+    margin-top: 10vh;
+    height:  100%;
+    width: 100%;
+    display: block;
+    justify-content: center;
+    font-size: 4vmin;
+}
+
+/* .btns:hover{
+    background-image: linear-gradient(0deg, rgba(17, 67, 147,0.5) 0%, rgba(255,255,255,0) 40%, rgba(255,255,255,0.5) 51%);
+} */
+
+#questbtn{
+    background-color: #61abff;
+    color: white;
+    font-weight: bolder;
+    text-shadow: 0px 1px 1px #757575;
+    border-radius: 20pt;
+    border: none;
+    padding: 5px 32px;
+    width: auto;
+    height: auto;
+    outline: none;
+}
+
+#questbtn:active {
+    position: relative;
+    top: 1px;
+}
+
+#mapbtn{
+    background-color: #61abff;
+    color: white;
+    font-weight: bolder;
+    text-shadow: 0px 1px 1px #757575;
+    border-radius: 20pt;
+    border: none;
+    padding: 5px 32px;
+    width: auto;
+    height: auto;
+    outline: none;
+}
+
+#mapbtn:active{
+    position: relative;
+    top: 1px;
+
+}
+
+#shopbtn{
+    background-color: #61abff;
+    color: white;
+    font-weight: bolder;
+    text-shadow: 0px 1px 1px #757575;
+    border-radius: 20pt;
+    border: none;
+    padding: 5px 32px;
+    width: auto;
+    height: auto;
+    outline: none;
+}
+
+#shopbtn:active {
+    position: relative;
+    top: 1px;
+}
+
+img{
+    position: fixed;
+    width: auto;
+    height: auto;
+    top: 82vh;
+    left: 4vw;
+    transform: rotate(-90deg);
+
+}
+
+
+@media only screen and (max-width: 748px) {
+    img{
+        width: 10vw;
+    }
+    
+    .labels{
+        position: relative;
+        top: 8vh;
+    }
+    
+    
+}
+
+
+.labels{
+    
+    position: fixed;
+    top: 78%;
+    left: -1%;
+    width: 100%;
+    text-align: center;
+    color: #4dc408;
+    font-weight: bold;
+    display: flex;
+}
+
+.inner-labels1{
+    position: relative;
+    bottom: 2vh;
+    width: 100%;
+    height: auto;
+}
+#crystal-img{
+    width: 3vw;
+    left: 47.3%;
+    top: 75%;
+    transform: rotate(0deg);
+    
+}
+
+#crystals{  
+    font-size: calc(5.5vmin - 1vmax);   
+}
+#level{
+    margin-left: -2%;
+    margin-right: 5%;
+    font-size: calc(5.5vmin - 1vmax);
+}
+
+#welcome{
+    font-size: calc(5vmin - 1vmax);
+
+}
+
+#newquest{
+    font-size: calc(5vmin - 1vmax);
+    color: yellow;
+}
+
+
+@media (max-width: 886px) {        
+    .visible {
+      display: block !important;
+    }
+    .inner-labels{
+        font-size: calc(4vmin - 1vmax);
+    }
+    #crystal-img{
+        top: 77%;
+    }
+
+}
+
+.visible{
+    display: none;
+}
+
+
+.inner-labels{
+    position: fixed;
+    top: 85%;
+    left: -1%;
+    width: 100%;
+    text-align: center;
+    color: #4dc408;
+    font-weight: bold;
+    font-size: calc(4.5vmin - 1vmax);
+}
+
+
+
+#logoutbtn{
+    position: fixed;
+    background-image: url(../images/logout.png);
+    background-size: cover;
+    background-color: transparent;
+    border: none;
+    height: 10vmin;
+    width: 10vmin;
+    left: 14vw;
+    bottom: 15vh;
+    outline: none;
+    margin-bottom: -10vh;
+    margin-left: -11vw;
+
+}

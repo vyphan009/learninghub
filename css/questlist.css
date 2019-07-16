@@ -1,0 +1,136 @@
+body {
+    background-color: #0F2440;
+}
+
+#tips {
+    background-color: #0F2440;
+}
+
+#tips_div {
+    color: #AADDFF;
+}
+
+.tips_visible {
+    visibility: visible;
+    width: 25px;
+    height: 25px;
+}
+
+.tips_hidden {
+    visibility: hidden;
+    width: 25px;
+    height: 25px;
+}
+
+#tips_on {
+    color:#2E8165 
+}
+
+#tips_off {
+    color:#454569
+}
+
+#top_clip {
+    position: relative;
+}
+
+#top_image {
+    min-height: 65px;
+}
+
+#top_menu {
+    border-radius: 20px;
+    width: 125px;
+    height: 39px;
+    background-color: #01B351;
+    color: white;
+    position: absolute;
+    right: 4%;
+    top: 23%;
+}
+
+#current_quest_background {
+    background-image: linear-gradient(#1A4884,#0A284E);
+    padding: 10px; 
+}
+
+#current_quest_title_font {
+    color: #AADDFF;
+    text-align: left;
+    font-size: 12px;
+}
+
+#current_image {
+    width: 50%;
+    height: 70%;
+    border-radius: 5px;
+}
+
+#rounded_current_button {
+    border-radius: 15px;
+    background: #73ADFF;
+    padding: 20px; 
+    width: 200px;
+    height: 120px;
+    color: #223377;
+    text-align: left;
+    font-size: 12px;
+}
+
+#quest_list_title {
+    padding: 20px;
+    font-size: 24px;
+    color:#AE9DC7;
+}
+
+#quest_list_title_info {
+    position: absolute;
+    left: 105px;
+    top: 22px;
+}
+
+#time_icon_info {
+    position: absolute;
+    right: 60px;
+    top: 22px;
+}
+
+#time_icon {
+    width: 30px;
+    height: 30px;
+}
+
+#quest_list {
+    position: relative;
+    background-image: linear-gradient(#0F2139,#396BA8);
+    width: 100%;
+}
+
+#quest_subject {
+    font-size: 20px;
+    color: #DFE4F7
+}
+
+#quest {
+    width: 230px;
+    height: 70px;
+    color: #7F8082;
+    text-align: left;
+    font-size: 12px;
+}
+
+#rounded_list_button {
+    border-radius: 15px;
+    background: #73ADFF;
+    padding: 2px; 
+    width: 70px;
+    height: 50px;
+    float: left;
+}
+
+#quest_image {
+    width: 80%;
+    height: 80%;
+    margin: 5px;
+    border-radius: 3px;
+}
