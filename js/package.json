@@ -82,7 +82,7 @@
     "@types/extend": "^3.0.1",
     "@types/is-stream": "~1.1.0",
     "@types/node": "^11.9.4",
-    "async": "^2.6.2",
+    "async": "^3.2.2",
     "axios": "^0.18.0",
     "buffer-from": "^1.1.1",
     "dotenv": "^6.2.0",
